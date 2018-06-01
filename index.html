@@ -1,1 +1,347 @@
-Hola Pueblo!
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PUEBLO CALIENTE</title>
+	<meta name="description" content="Mi gente, mi casa y mi sonido" />
+	<meta name="keywords" content="menu, css grid, box, navigation, web development, animation" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo2.v5.css" />
+	<style>
+		.preloader {
+			display: flex;
+			align-items: center;
+			position: fixed;
+			text-align: center;
+			left: 0px;
+			top: 0px;
+			width: 100%;
+			height: 100%;
+			z-index: 7777777;
+			background: black url("img/preload.gif") no-repeat center;
+		}
+	</style>
+	<script>
+		document.documentElement.className = "js";
+		var supportsCssVars = function () {
+			var e, t = document.createElement("style");
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports &&
+				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
+		};
+		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+	</script>
+	<script>
+		window.onload = function () {
+			var preloader = document.getElementById("preloader");
+			preloader.style.display = "none";
+		};
+	</script>
+</head>
+
+<body class="demo-2 loading">
+	<div id="preloader" class="preloader">
+		<div class="loader"></div>
+	</div>
+	<main>
+		<div class="message">Para ver el menu ingresa desde una pantalla mas grande</div>
+		<div class="content content--fixed">
+			<button class="menu-trigger"></button>
+		</div>
+		<div id="content-1" class="content content--switch content--switch-current">
+			<h2 class="content__title">
+				<img src="img/logo_pc.png" alt="" style="max-height: 200px;">
+			</h2>
+			<div class="content__subtitle"></div>
+			<div class="neticons">
+				<a href="#">
+					<i class="fa fa-spotify"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-youtube-square"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-soundcloud"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div id="content-2" class="content content--switch">
+			<h2 class="content__title">estar</h2>
+			<div class="content__subtitle">al tanto de...</div>
+			<div class="sus-wrp">
+				<p style="padding: 15px;">Ingresa tu dirección de correo elctrónico para recibir las últimas historias de este pueblo que esta caliente.</p>
+				<input class="sus_in" type="text" placeholder="Correo">
+				<button class="sus_sub" type="submit">Enviar</button>
+			</div>
+			<div class="neticons" style="margin-top:30px;">
+				<a href="#">
+					<i class="fa fa-spotify"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-youtube-square"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-soundcloud"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-facebook-square"></i>
+				</a>
+				<a href="#">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div id="content-3" class="content content--switch">
+			<h2 class="content__title">luz & sombra</h2>
+			<div class="content__subtitle">fotografía</div>
+		</div>
+		<div id="content-4" class="content content--switch">
+			<h2 class="content__title">movimiento</h2>
+			<div class="content__subtitle">videos</div>
+		</div>
+		<div id="content-5" class="content content--switch">
+			<h2 class="content__title">manifesto</h2>
+			<div class="content__subtitle">escrito</div>
+			<article class="text-pill">
+				<p>
+					En una sociedad donde el poder político ejerce tanto control en el desarrollo de su gente. Surge Pueblo Caliente con la idea
+					de retratar la realidad y dejar un punto de vista claro. Quiere conocerlo? Escúchelo!!
+				</p>
+				<p>
+					Entendemos que las culturas y los individuos somos distintos. Por lo tanto, cada uno debe descubrir su evolución y desarrollo
+					a su tiempo, y a su manera. No todos pensamos igual, sentimos igual, ni todos queremos lo mismo. Respeto, en pocas palabras.
+				</p>
+				<p>
+					Hacer arte en contra del poder corrupto que evita sociedades equitativas y desarrolladas.
+				</p>
+				<div class="autor-foot">
+					<div class="aka">Masa</div>
+					<div class="date"> 27 de mayo 2018</div>
+				</div>
+			</article>
+			<article class="text-pill">
+				<p>
+					Mi otro yo, tuvo la delicadeza el día de hoy de preguntarme sobre el estado real de las cosas, sorpresa me lleve al darme
+					cuenta que a pesar de una, “estabilidad”, social capitalista conocida, me combato entre pensamientos de mi realidad
+					y me pregunto si todos tenemos dentro de si este otro yo, que locuaz e intempestivo, totaliza o resume el accionar del
+					diario vivir del sujeto a la pregunta básica de la finalidad u objetivo. He de esperar que sea así, que todos en el
+					interior tengamos, ese chance de reflexión y sin obviarlo lo enfrentemos, como nos adoctrinan a enfrentar la muerte.
+				</p>
+				<p>
+					Cierto es que morir es mucho más fácil que vivir, y que existen millones de razones para la muerte pero solo una para la
+					vida, es esta la pregunta que totaliza o simplifica mi otro yo ¿Cuál es la razón de esta vida?. Criticar la vida de
+					los demás, comprarla, aparentarla, o tal vez sea aprenderla, compartirla, amarla … vivirla. Y me pregunto si este desborde
+					tecnológico y avance a paso gigante de la maquinaria industrial delimita nuestra “libertad” de vivirla a solo los paradigmas
+					planteados por un papel moneda vacío y sin corazón.
+				</p>
+				<p>
+					Este otro yo que con razón pura grita libertad, pero no puede ser más libre en este mundo terrenal de lo que nos permite
+					el capital. ¿Llegaremos a obtenerla, una libertad sublime fuera del tecnicismo industrial, y como lo podremos lograr
+					desde la unidad del sujeto?
+				</p>
+				<div class="autor-foot">
+					<div class="aka">Aborigen</div>
+					<div class="date"> 27 de mayo 2018</div>
+				</div>
+
+			</article>
+		</div>
+		<div id="content-6" class="content content--switch">
+			<h2 class="content__title">pentagrama</h2>
+			<div class="content__subtitle">música</div>
+			<div class="music-wrp">
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">01 Intro</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/01_intro.ogg" type="audio/ogg">
+							<source src="audio/01_intro.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">02 Latino Andino</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/02_latino_andino.ogg" type="audio/ogg">
+							<source src="audio/02_latino_andino.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">03 Con Egocentrismo</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/03_con_egocentrismo.ogg" type="audio/ogg">
+							<source src="audio/03_con_egocentrismo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">04 Real</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/04_real.ogg" type="audio/ogg">
+							<source src="audio/04_real.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">05 Tiempo Hardcore</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/05_tiempo_hardcord.ogg" type="audio/ogg">
+							<source src="audio/05_tiempo_hardcord.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">06 Estar Al Tanto</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/06_estar_al_tanto.ogg" type="audio/ogg">
+							<source src="audio/06_estar_al_tanto.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">07 Outro</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/07_outro.ogg" type="audio/ogg">
+							<source src="audio/07_outro.mp3" type="audio/mpeg">our browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="grim">
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--1"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--2"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--3"></div>
+				<div class="grim__item-content">
+					<div class="grim__item-inner">
+						<button class="menu-trigger menu-trigger--close">- cerrar</button>
+					</div>
+				</div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--4"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--5"></div>
+				<a href="#content-1" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">Pueblo</h3>
+					</div>
+				</a>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--6"></div>
+				<div class="grim__item-img grim__item-img--1" style="background-image: url(img/1.jpg);"></div>
+				<a href="#content-2" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">estar</h3>
+						<span class="grim__item-desc">al tanto</span>
+					</div>
+				</a>
+				<div class="grim__item-bg grim__item-bg-cover grim__item-bg--6"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--7"></div>
+				<div class="grim__item-img grim__item-img--2" style="background-image: url(img/2.jpg);"></div>
+				<a href="#content-3" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">luz</h3>
+						<span class="grim__item-desc">fotografía</span>
+					</div>
+				</a>
+				<div class="grim__item-bg grim__item-bg-cover grim__item-bg--7"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--8"></div>
+				<div class="grim__item-img grim__item-img--3" style="background-image: url(img/3.jpg);"></div>
+				<a href="#content-4" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">movimiento</h3>
+						<span class="grim__item-desc">videos</span>
+					</div>
+				</a>
+				<div class="grim__item-bg grim__item-bg-cover grim__item-bg--8"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--9"></div>
+				<div class="grim__item-img grim__item-img--4" style="background-image: url(img/4.jpg);"></div>
+				<a href="#content-5" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">manifesto</h3>
+						<span class="grim__item-desc">en letras</span>
+					</div>
+				</a>
+				<div class="grim__item-bg grim__item-bg-cover grim__item-bg--9"></div>
+			</div>
+			<div class="grim__item">
+				<div class="grim__item-bg grim__item-bg--10"></div>
+				<div class="grim__item-img grim__item-img--5" style="background-image: url(img/5.jpg);"></div>
+				<a href="#content-6" class="grim__link grim__item-content">
+					<div class="grim__item-inner">
+						<h3 class="grim__item-title">pentagrama</h3>
+						<span class="grim__item-desc">música</span>
+					</div>
+				</a>
+				<div class="grim__item-bg grim__item-bg-cover grim__item-bg--10"></div>
+			</div>
+		</nav>
+	</main>
+	<script src="js/demo.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/menu2.js"></script>
+	<script src="https://use.fontawesome.com/d7256811e2.js"></script>
+	<script>
+		var audios = document.getElementsByTagName('audio');
+
+		document.addEventListener('play', function (e) {
+			for (var i = 0, len = audios.length; i < len; i++) {
+				if (audios[i] != e.target) {
+					audios[i].pause();
+				}
+			}
+		}, true);
+
+		for (var i = 0; i < audios.length; i++) {
+			audioListeners(i);
+		}
+
+		function audioListeners(i) {
+			audios[i].addEventListener('ended', function () {
+				this.duration = 0;
+				this.pause();
+				audios[i + 1].play();
+			}, false);
+		}
+	</script>
+</body>
+
+</html>
