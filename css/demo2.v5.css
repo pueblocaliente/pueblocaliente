@@ -61,6 +61,10 @@ button {
 	opacity: 1;
 }
 
+.menu-trigger--close:hover:after {
+	opacity: 0;
+}
+
 .grim {
 	display: none;
 }
