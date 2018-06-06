@@ -45,9 +45,20 @@ button {
 	display: none;
 }
 
-.menu-trigger:hover {
-	opacity: .5s ease-in-out;
-	background-image: url('../img/btn-mn_alt.png');
+.menu-trigger:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url('../img/btn-mn_alt.png')transparent no-repeat center;
+	background-size: contain;
+	opacity: 0;
+}
+
+.menu-trigger:hover:after {
+	opacity: 1;
 }
 
 .grim {
