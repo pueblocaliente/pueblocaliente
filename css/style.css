@@ -369,7 +369,7 @@ button {
 }
 
 .text-pill {
-	max-width: 450px;
+	max-width: 650px;
 	margin: 30px auto 0;
 	padding: 15px;
 	background-color: rgba(255, 255, 255, .75);
@@ -472,4 +472,34 @@ button {
 
 .autor-foot .date {
 	font-size: 12px;
+}
+
+.pc_foto_album {
+	max-width: 80%;
+}
+
+.pc_foto_album figure {
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.pc_foto_album figure a {
+	display: block;
+	transition: all .2s ease-in-out;
+}
+
+.pc_foto_album figure a:hover {
+	opacity: .95;
+}
+
+.pc_foto_album figure img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+}
+
+.pc_foto_album figcaption {
+	background: rgba(0, 0, 0, .8);
+	color: white;
+	padding: 5px;
 }
