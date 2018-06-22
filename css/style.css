@@ -408,6 +408,7 @@ button {
 }
 
 .sus_sub {
+	font-weight: 400;
 	padding: 10px 15px;
 	color: white;
 	background-color: rgba(0, 0, 0, 1);
@@ -416,7 +417,7 @@ button {
 }
 
 .sus_sub:hover {
-	background: yellow;
+	background: red;
 }
 
 .grim__link {
