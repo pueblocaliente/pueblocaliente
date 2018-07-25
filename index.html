@@ -52,6 +52,247 @@
 		<div class="content content--fixed">
 			<button class="menu-trigger"></button>
 		</div>
+
+		<div id="content-6" class="content content--switch">
+			<h2 class="content__title">pentagrama</h2>
+			<div class="content__subtitle">música</div>
+
+			<div id="flat-black-player-container">
+				<div id="player-screen">
+					<!-- <div id="player-top">
+						<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
+					</div> -->
+					<div id="player-progress-bar-container">
+						<progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true"></progress>
+						<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+					</div>
+					<div id="player-middle">
+						<div id="time-container">
+							<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
+							<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
+						</div>
+						<div id="meta-container">
+							<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+
+							<div class="song-artist-album">
+								<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+							</div>
+						</div>
+					</div>
+					<div id="player-bottom">
+						<div id="control-container">
+							<div id="shuffle-container">
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+							</div>
+
+							<div id="prev-container">
+								<div class="amplitude-prev" id="previous"></div>
+							</div>
+
+							<div id="play-pause-container">
+								<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+							</div>
+
+							<div id="next-container">
+								<div class="amplitude-next" id="next"></div>
+							</div>
+
+							<div id="repeat-container">
+								<div class="amplitude-repeat" id="repeat"></div>
+							</div>
+						</div>
+						<div id="volume-container">
+							<img src="img/volume.svg" />
+							<input type="range" class="amplitude-volume-slider" step=".1" />
+						</div>
+					</div>
+				</div>
+
+				<div id="list-screen" class="slide-in-top">
+					<div id="list">
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+							<span class="song-number-now-playing">
+								<span class="number">1</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Intro</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+							<span class="song-number-now-playing">
+								<span class="number">2</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Latino Andino</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+							<span class="song-number-now-playing">
+								<span class="number">3</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Con Egocentrismo</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+							<span class="song-number-now-playing">
+								<span class="number">4</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Real</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+							<span class="song-number-now-playing">
+								<span class="number">5</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Tiempo Hardcord</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+							<span class="song-number-now-playing">
+								<span class="number">6</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Estar Al Tanto</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+							<span class="song-number-now-playing">
+								<span class="number">7</span>
+								<img class="now-playing" src="img/now-playing.svg" />
+							</span>
+							<div class="song-meta-container">
+								<div class="song-meta">
+									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
+									<div class="song-meta-info">
+										<span class="song-name">Outro</span>
+										<span class="song-artist-album">Pueblo Caliente</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="music-wrp">
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">01 Intro</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/01_intro.ogg" type="audio/ogg">
+							<source src="audio/01_intro.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">02 Latino Andino</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/02_latino_andino.ogg" type="audio/ogg">
+							<source src="audio/02_latino_andino.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">03 Con Egocentrismo</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/03_con_egocentrismo.ogg" type="audio/ogg">
+							<source src="audio/03_con_egocentrismo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">04 Real</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/04_real.ogg" type="audio/ogg">
+							<source src="audio/04_real.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">05 Tiempo Hardcore</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/05_tiempo_hardcord.ogg" type="audio/ogg">
+							<source src="audio/05_tiempo_hardcord.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">06 Estar Al Tanto</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/06_estar_al_tanto.ogg" type="audio/ogg">
+							<source src="audio/06_estar_al_tanto.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+				<div class="music_player">
+					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
+					<div class="music_player_label">07 Outro</div>
+					<div class="music_player_song">
+						<audio controls>
+							<source src="audio/07_outro.ogg" type="audio/ogg">
+							<source src="audio/07_outro.mp3" type="audio/mpeg">our browser does not support the audio element.
+						</audio>
+					</div>
+				</div>
+			</div> -->
+		</div>
 		<div id="content-1" class="content content--switch content--switch-current">
 			<h2 class="content__title">
 				<img src="img/logo_pc.png" alt="" style="max-height: 200px;">
@@ -177,7 +418,7 @@
 					<figcaption>“La espera en el abandono - Carlos Tapia</figcaption>
 				</figure>
 			</div>
-			 <div class="pc_foto_album">
+			<!-- <div class="pc_foto_album">
 				<figure>
 					<a href="img/fotos_lu_bula/1.jpg" target="_blank">
 						<img src="img/fotos_lu_bula/1.jpg">
@@ -250,7 +491,7 @@
 					</a>
 					<figcaption>Luisa Osorio</figcaption>
 				</figure>
-			</div>
+			</div> -->
 		</div>
 		<div id="content-4" class="content content--switch">
 			<h2 class="content__title">movimiento</h2>
@@ -364,252 +605,7 @@
 
 
 		</div>
-		<div id="content-6" class="content content--switch">
-			<h2 class="content__title">pentagrama</h2>
-			<div class="content__subtitle">música</div>
 
-			<div id="flat-black-player-container">
-				<div id="player-screen">
-					<!-- <div id="player-top">
-						<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
-					</div> -->
-					<div id="player-progress-bar-container">
-						<progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true"></progress>
-						<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-					</div>
-					<div id="player-middle">
-						<div id="time-container">
-							<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
-							<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
-						</div>
-						<div id="meta-container">
-							<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
-
-							<div class="song-artist-album">
-								<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
-							</div>
-						</div>
-					</div>
-					<div id="player-bottom">
-						<div id="control-container">
-
-							<div id="shuffle-container">
-								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
-							</div>
-
-							<div id="prev-container">
-								<div class="amplitude-prev" id="previous"></div>
-							</div>
-
-							<div id="play-pause-container">
-								<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
-							</div>
-
-							<div id="next-container">
-								<div class="amplitude-next" id="next"></div>
-							</div>
-
-							<div id="repeat-container">
-								<div class="amplitude-repeat" id="repeat"></div>
-							</div>
-
-						</div>
-
-						<div id="volume-container">
-							<img src="img/volume.svg" />
-							<input type="range" class="amplitude-volume-slider" step=".1" />
-						</div>
-					</div>
-				</div>
-
-				<div id="list-screen" class="slide-in-top">
-					<div id="list">
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
-							<span class="song-number-now-playing">
-								<span class="number">1</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Intro</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
-							<span class="song-number-now-playing">
-								<span class="number">2</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Latino Andino</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
-							<span class="song-number-now-playing">
-								<span class="number">3</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Con Egocentrismo</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
-							<span class="song-number-now-playing">
-								<span class="number">4</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Real</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
-							<span class="song-number-now-playing">
-								<span class="number">5</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Tiempo Hardcord</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
-							<span class="song-number-now-playing">
-								<span class="number">6</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Estar Al Tanto</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
-							<span class="song-number-now-playing">
-								<span class="number">7</span>
-								<img class="now-playing" src="img/now-playing.svg" />
-							</span>
-							<div class="song-meta-container">
-								<div class="song-meta">
-									<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" class="song-meta-thumb" />
-									<div class="song-meta-info">
-										<span class="song-name">Outro</span>
-										<span class="song-artist-album">Pueblo Caliente</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- <div class="music-wrp">
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">01 Intro</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/01_intro.ogg" type="audio/ogg">
-							<source src="audio/01_intro.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">02 Latino Andino</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/02_latino_andino.ogg" type="audio/ogg">
-							<source src="audio/02_latino_andino.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">03 Con Egocentrismo</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/03_con_egocentrismo.ogg" type="audio/ogg">
-							<source src="audio/03_con_egocentrismo.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">04 Real</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/04_real.ogg" type="audio/ogg">
-							<source src="audio/04_real.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">05 Tiempo Hardcore</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/05_tiempo_hardcord.ogg" type="audio/ogg">
-							<source src="audio/05_tiempo_hardcord.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">06 Estar Al Tanto</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/06_estar_al_tanto.ogg" type="audio/ogg">
-							<source src="audio/06_estar_al_tanto.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-				<div class="music_player">
-					<img class="music_player_thumb" src="img/thumb_a1_.jpg" alt="">
-					<div class="music_player_label">07 Outro</div>
-					<div class="music_player_song">
-						<audio controls>
-							<source src="audio/07_outro.ogg" type="audio/ogg">
-							<source src="audio/07_outro.mp3" type="audio/mpeg">our browser does not support the audio element.
-						</audio>
-					</div>
-				</div>
-			</div> -->
-
-		</div>
 		<nav class="grim">
 			<div class="grim__item">
 				<div class="grim__item-bg grim__item-bg--1"></div>
