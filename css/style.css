@@ -520,7 +520,7 @@ button {
 .pc_foto_album figure img {
 	display: block;
 	margin: auto;
-	max-width: 100%;
+	max-width: 700px;
 }
 
 .pc_foto_album figcaption {
