@@ -67,6 +67,7 @@ button {
 	display: block;
 	font-size: 2.75rem;
 	text-align: center;
+	color: white;
 }
 
 .menu-trigger {
@@ -388,12 +389,33 @@ button {
 
 .neticons {
 	font-size: 2rem;
-	background: white;
+	background: black;
 	padding: 15px;
 }
 
 .neticons a {
 	margin-right: 1rem;
+	color: white;
+}
+.pc_player {
+	max-width: 800px;
+	max-height: 600px;
+	display: flex;
+}
+
+.pc_player div#flat-black-player-container div#list-screen {
+	height: 139px;
+}
+
+.pc_player_thumb,
+.pc_player_player {
+	width: 50%;
+	height: 100%;
+}
+
+.pc_player_thumb img {
+	width: 100%;
+	height: auto;
 }
 
 .music-wrp {
@@ -530,7 +552,7 @@ button {
 }
 
 .content--switch {
-	background-color: #9E9E9E;
+	/*background-color: #9E9E9E;*/
 	background-position: center;
 	background-blend-mode: overlay;
 	background-attachment: scroll;
@@ -589,4 +611,18 @@ button {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+
+@media screen and (max-width: 55em){
+	.pc_player {
+		flex-direction: column;
+		max-height: none;
+	}
+
+	.pc_player_thumb,
+.pc_player_player {
+	width: 100%;
+}
+	
 }
