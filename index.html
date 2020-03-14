@@ -31,7 +31,8 @@
 		document.documentElement.className = "js";
 		var supportsCssVars = function () {
 			var e, t = document.createElement("style");
-			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports &&
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS
+				.supports &&
 				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
 		};
 		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
@@ -80,197 +81,192 @@
 			<div class="content__subtitle">música</div>
 
 
-<div class="pc_player">
-	<div class="pc_player_thumb">
-		<div id="player-top">
-			<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
-		</div>
-	</div>
-	<div class="pc_player_player">
-		<div id="flat-black-player-container">
-			<div id="player-screen">
-			
-				<div id="player-progress-bar-container">
-					<progress id="song-played-progress" class="amplitude-song-played-progress" amplitude-main-song-played-progress="true"></progress>
-					<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-				</div>
-				<div id="player-middle">
-					<div id="time-container">
-						<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
-						<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
-					</div>
-					<div id="meta-container">
-						<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
-
-						<div class="song-artist-album">
-							<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
-						</div>
+			<div class="pc_player">
+				<div class="pc_player_thumb">
+					<div id="player-top">
+						<img amplitude-song-info="cover_art_url" amplitude-main-song-info="true" />
 					</div>
 				</div>
-				<div id="player-bottom">
-					<div id="control-container">
-						<div id="shuffle-container">
-							<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+				<div class="pc_player_player">
+					<div id="flat-black-player-container">
+						<div id="player-screen">
+
+							<div id="player-progress-bar-container">
+								<progress id="song-played-progress" class="amplitude-song-played-progress"
+									amplitude-main-song-played-progress="true"></progress>
+								<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+							</div>
+							<div id="player-middle">
+								<div id="time-container">
+									<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
+									<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
+								</div>
+								<div id="meta-container">
+									<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+
+									<div class="song-artist-album">
+										<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
+									</div>
+								</div>
+							</div>
+							<div id="player-bottom">
+								<div id="control-container">
+									<div id="shuffle-container">
+										<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+									</div>
+
+									<div id="prev-container">
+										<div class="amplitude-prev" id="previous"></div>
+									</div>
+
+									<div id="play-pause-container">
+										<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+									</div>
+
+									<div id="next-container">
+										<div class="amplitude-next" id="next"></div>
+									</div>
+
+									<div id="repeat-container">
+										<div class="amplitude-repeat" id="repeat"></div>
+									</div>
+								</div>
+								<div id="volume-container">
+									<img src="img/volume.svg" />
+									<input type="range" class="amplitude-volume-slider" step=".1" />
+								</div>
+							</div>
 						</div>
 
-						<div id="prev-container">
-							<div class="amplitude-prev" id="previous"></div>
-						</div>
+						<div id="list-screen" class="slide-in-top">
+							<div id="list">
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+									<span class="song-number-now-playing">
+										<span class="number">1</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
 
-						<div id="play-pause-container">
-							<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
-						</div>
+											<div class="song-meta-info">
+												<span class="song-name">Día a Dia</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
 
-						<div id="next-container">
-							<div class="amplitude-next" id="next"></div>
-						</div>
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+									<span class="song-number-now-playing">
+										<span class="number">2</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
 
-						<div id="repeat-container">
-							<div class="amplitude-repeat" id="repeat"></div>
+											<div class="song-meta-info">
+												<span class="song-name">Intro</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+									<span class="song-number-now-playing">
+										<span class="number">3</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+
+											<div class="song-meta-info">
+												<span class="song-name">Latino Andino</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+									<span class="song-number-now-playing">
+										<span class="number">4</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+
+											<div class="song-meta-info">
+												<span class="song-name">Con Egocentrismo</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+									<span class="song-number-now-playing">
+										<span class="number">5</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+
+											<div class="song-meta-info">
+												<span class="song-name">Real</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+									<span class="song-number-now-playing">
+										<span class="number">6</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+
+											<div class="song-meta-info">
+												<span class="song-name">Tiempo Hardcord</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+									<span class="song-number-now-playing">
+										<span class="number">7</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+
+											<div class="song-meta-info">
+												<span class="song-name">Estar Al Tanto</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
+									<span class="song-number-now-playing">
+										<span class="number">8</span>
+										<img class="now-playing" src="img/now-playing.svg" />
+									</span>
+									<div class="song-meta-container">
+										<div class="song-meta">
+											<div class="song-meta-info">
+												<span class="song-name">Outro</span>
+												<span class="song-artist-album">Pueblo Caliente</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div id="volume-container">
-						<img src="img/volume.svg" />
-						<input type="range" class="amplitude-volume-slider" step=".1" />
 					</div>
 				</div>
 			</div>
-
-			<div id="list-screen" class="slide-in-top">
-				<div id="list">
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
-						<span class="song-number-now-playing">
-							<span class="number">1</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Día a Dia</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
-						<span class="song-number-now-playing">
-							<span class="number">2</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Intro</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
-						<span class="song-number-now-playing">
-							<span class="number">3</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Latino Andino</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
-						<span class="song-number-now-playing">
-							<span class="number">4</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Con Egocentrismo</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
-						<span class="song-number-now-playing">
-							<span class="number">5</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Real</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
-						<span class="song-number-now-playing">
-							<span class="number">6</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Tiempo Hardcord</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
-						<span class="song-number-now-playing">
-							<span class="number">7</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Estar Al Tanto</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
-						<span class="song-number-now-playing">
-							<span class="number">8</span>
-							<img class="now-playing" src="img/now-playing.svg" />
-						</span>
-						<div class="song-meta-container">
-							<div class="song-meta">
-
-								<div class="song-meta-info">
-									<span class="song-name">Outro</span>
-									<span class="song-artist-album">Pueblo Caliente</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
-
-			
 		</div>
 		<div id="content-2" class="content content--switch">
 			<h2 class="content__title">estar</h2>
@@ -282,9 +278,10 @@
 				<button class="sus_sub" type="submit">Enviar</button> -->
 				<!-- Begin MailChimp Signup Form -->
 				<div id="mc_embed_signup">
-					<form action="https://facebook.us18.list-manage.com/subscribe/post?u=215bbcc52e2f1d21f84ee4607&amp;id=2f4bff8411"
-					 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-					 novalidate>
+					<form
+						action="https://facebook.us18.list-manage.com/subscribe/post?u=215bbcc52e2f1d21f84ee4607&amp;id=2f4bff8411"
+						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+						target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
 							<input type="email" value="" name="EMAIL" class="sus_in" id="mce-EMAIL" placeholder="Correo" required>
 							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -372,20 +369,27 @@
 			<h2 class="content__title">movimiento</h2>
 			<div class="content__subtitle">videos</div>
 			<div class="pc__videos">
-				<div class="pc__video_wrp"><iframe id="player3" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/06ax9I5yqT4?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player4" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/9ChXqdXoMc4?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player5" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/JFphxdK4tZc?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player6" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/AUxeyXH6P6Y?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player7" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/gUm5Cqq6t4c?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player8" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/pQeBIbI9twA?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
-				<div class="pc__video_wrp"><iframe id="player9" class="yt_players" width="560" height="315" src="http://www.youtube.com/embed/_an5-OJ7poU?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
-					 frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player3" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/06ax9I5yqT4?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player4" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/9ChXqdXoMc4?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player5" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/JFphxdK4tZc?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player6" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/AUxeyXH6P6Y?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player7" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/gUm5Cqq6t4c?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player8" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/pQeBIbI9twA?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player9" class="yt_players" width="560" height="315"
+						src="http://www.youtube.com/embed/_an5-OJ7poU?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+						frameborder="0" allowfullscreen></iframe></div>
 			</div>
 		</div>
 		<div id="content-5" class="content content--switch">
@@ -394,14 +398,14 @@
 			<article class="text-pill">
 				<p>
 					“Día a Día” es una canción para escuchar en movimiento. Todos los días nos transportamos en el
-servicio público, en automóviles, bicicletas, a pie, o en cualquier otro medio. De igual forma para
-todos es un momento de introspección donde conversamos con nosotros mismos y sacamos
-conclusiones que al final deciden el rumbo de la vida. Allí encontrarás una conversación que
-da a entender que el mundo es un núcleo de problemas y de soluciones, de ansiedad o de
-tranquilidad, de oportunidades o de estabilidad y que todo depende de la actitud, el conocimiento
-y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
+					servicio público, en automóviles, bicicletas, a pie, o en cualquier otro medio. De igual forma para
+					todos es un momento de introspección donde conversamos con nosotros mismos y sacamos
+					conclusiones que al final deciden el rumbo de la vida. Allí encontrarás una conversación que
+					da a entender que el mundo es un núcleo de problemas y de soluciones, de ansiedad o de
+					tranquilidad, de oportunidades o de estabilidad y que todo depende de la actitud, el conocimiento
+					y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 				</p>
-			
+
 				<div class="autor-foot">
 					<div class="aka">Masa</div>
 					<div class="date"> 13 de Marzo 2020</div>
@@ -409,14 +413,17 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 			</article>
 			<article class="text-pill">
 				<p>
-					En una sociedad donde el poder político ejerce tanto control en el desarrollo de su gente. Surge Pueblo Caliente
+					En una sociedad donde el poder político ejerce tanto control en el desarrollo de su gente. Surge Pueblo
+					Caliente
 					con la idea
 					de retratar la realidad y dejar un punto de vista claro. Quiere conocerlo? Escúchelo!!
 				</p>
 				<p>
-					Entendemos que las culturas y los individuos somos distintos. Por lo tanto, cada uno debe descubrir su evolución y
+					Entendemos que las culturas y los individuos somos distintos. Por lo tanto, cada uno debe descubrir su
+					evolución y
 					desarrollo
-					a su tiempo, y a su manera. No todos pensamos igual, sentimos igual, ni todos queremos lo mismo. Respeto, en pocas
+					a su tiempo, y a su manera. No todos pensamos igual, sentimos igual, ni todos queremos lo mismo. Respeto, en
+					pocas
 					palabras.
 				</p>
 				<p>
@@ -429,30 +436,38 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 			</article>
 			<article class="text-pill">
 				<p>
-					Mi otro yo, tuvo la delicadeza el día de hoy de preguntarme sobre el estado real de las cosas, sorpresa me lleve
+					Mi otro yo, tuvo la delicadeza el día de hoy de preguntarme sobre el estado real de las cosas, sorpresa me
+					lleve
 					al darme
 					cuenta que a pesar de una, “estabilidad”, social capitalista conocida, me combato entre pensamientos de mi
 					realidad
-					y me pregunto si todos tenemos dentro de si este otro yo, que locuaz e intempestivo, totaliza o resume el accionar
+					y me pregunto si todos tenemos dentro de si este otro yo, que locuaz e intempestivo, totaliza o resume el
+					accionar
 					del
-					diario vivir del sujeto a la pregunta básica de la finalidad u objetivo. He de esperar que sea así, que todos en
+					diario vivir del sujeto a la pregunta básica de la finalidad u objetivo. He de esperar que sea así, que todos
+					en
 					el
 					interior tengamos, ese chance de reflexión y sin obviarlo lo enfrentemos, como nos adoctrinan a enfrentar la
 					muerte.
 				</p>
 				<p>
-					Cierto es que morir es mucho más fácil que vivir, y que existen millones de razones para la muerte pero solo una
+					Cierto es que morir es mucho más fácil que vivir, y que existen millones de razones para la muerte pero solo
+					una
 					para la
-					vida, es esta la pregunta que totaliza o simplifica mi otro yo ¿Cuál es la razón de esta vida?. Criticar la vida
+					vida, es esta la pregunta que totaliza o simplifica mi otro yo ¿Cuál es la razón de esta vida?. Criticar la
+					vida
 					de
-					los demás, comprarla, aparentarla, o tal vez sea aprenderla, compartirla, amarla … vivirla. Y me pregunto si este
+					los demás, comprarla, aparentarla, o tal vez sea aprenderla, compartirla, amarla … vivirla. Y me pregunto si
+					este
 					desborde
-					tecnológico y avance a paso gigante de la maquinaria industrial delimita nuestra “libertad” de vivirla a solo los
+					tecnológico y avance a paso gigante de la maquinaria industrial delimita nuestra “libertad” de vivirla a solo
+					los
 					paradigmas
 					planteados por un papel moneda vacío y sin corazón.
 				</p>
 				<p>
-					Este otro yo que con razón pura grita libertad, pero no puede ser más libre en este mundo terrenal de lo que nos
+					Este otro yo que con razón pura grita libertad, pero no puede ser más libre en este mundo terrenal de lo que
+					nos
 					permite
 					el capital. ¿Llegaremos a obtenerla, una libertad sublime fuera del tecnicismo industrial, y como lo podremos
 					lograr
@@ -470,71 +485,92 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 				</h4>
 				<h4>LAS MIRADAS QUE VUELVEN AL RIO</h4>
 				<p>
-					“En Colombia existen un sinnúmero de manifestaciones culturales que expresan la variedad étnica, religiosa, de
+					“En Colombia existen un sinnúmero de manifestaciones culturales que expresan la variedad étnica, religiosa,
+					de
 					costumbres,
-					tradiciones y formas de vida de su población, así como su riqueza natural y diversidad de climas, geografías y
+					tradiciones y formas de vida de su población, así como su riqueza natural y diversidad de climas,
+					geografías y
 					paisajes,
 					entre otros. Toda la franja del río Magdalena perteneciente hoy a los departamentos del Cesar y Magdalena, y
 					desde
 					Tamalameque hasta Salamina fue “tierra de Chimilas”. Desde esta franja hasta el descenso al valle de los ríos
 					Cesar
-					y Ranchería se extendían igualmente. La nación chimila no era un pueblo disperso ni trashumante; su territorio
+					y Ranchería se extendían igualmente. La nación chimila no era un pueblo disperso ni trashumante; su
+					territorio
 					estaba
 					dividido en comarcas (la de Pocabuy y la de Upar, con ciudades y caciques; las principales, algunos con sus
 					nombres
-					originales y otras con nombres dados posteriormente por los españoles). El indio chimila era gran navegante de
+					originales y otras con nombres dados posteriormente por los españoles). El indio chimila era gran navegante
+					de
 					ríos
-					y ciénagas; construía sus pueblos como un conjunto de grandes bohíos circulares en medio de los cuales había
+					y ciénagas; construía sus pueblos como un conjunto de grandes bohíos circulares en medio de los cuales
+					había
 					siempre
 					uno mayor. Los bohíos eran de palma y vara con techo cónico y coronados en el vértice con una olla de
 					cerámica.
 					.La mitad de los chimilas vivían a orillas de la ciénaga y la otra mitad a orillas de los ríos; los de las
 					ciénagas
-					tendrían métodos diferentes de pesca y otro régimen de cultivo y vivienda, acostumbraban trasladar sus casas
+					tendrían métodos diferentes de pesca y otro régimen de cultivo y vivienda, acostumbraban trasladar sus
+					casas
 					pajizas
 					conforme al niveles de las agua de la respectiva ciénaga a orillas de cual se encontrara”. (1)
 				</p>
 				<p>
-					Yo nací en la población rivereña de “El Banco” Magdalena ciudad imperio de la cumbia, es allí donde nace el
+					Yo nací en la población rivereña de “El Banco” Magdalena ciudad imperio de la cumbia, es allí donde nace
+					el
 					proyecto
-					“País Pocabuy” en uno de mis tantos viajes a recorrer mis raíces, noté que en el pueblo como en la mayoría de
+					“País Pocabuy” en uno de mis tantos viajes a recorrer mis raíces, noté que en el pueblo como en la mayoría
+					de
 					las
-					poblaciones rivereñas que acompañan al gran rio “Yuma” o rio Magdalena como se le conoce comúnmente se le ha
+					poblaciones rivereñas que acompañan al gran rio “Yuma” o rio Magdalena como se le conoce comúnmente se le
+					ha
 					dado
-					la espalda y ya no se le mira, es en este punto el cual decido hacerle un homenaje a “Yuma” a sus más antiguos
+					la espalda y ya no se le mira, es en este punto el cual decido hacerle un homenaje a “Yuma” a sus más
+					antiguos
 					habitantes,
-					sus pescadores y tratar de dar una visión diferente a sus pobladores y que sus miradas vuelvan a ese majestuoso
+					sus pescadores y tratar de dar una visión diferente a sus pobladores y que sus miradas vuelvan a ese
+					majestuoso
 					rio,
-					madre de todos el cual por descuido se ha vuelto la cloaca de sus habitantes, tratando de generar un cambio y una
+					madre de todos el cual por descuido se ha vuelto la cloaca de sus habitantes, tratando de generar un cambio y
+					una
 					visión
-					diferente, que sus pobladores vuelvan a tener el romance que tenían nuestros ancestros y que eso resulte en el
+					diferente, que sus pobladores vuelvan a tener el romance que tenían nuestros ancestros y que eso resulte en
+					el
 					resurgimiento
-					del rio el cual era la principal vía de comunicación con el interior del país y quien provee de alimento y agua
+					del rio el cual era la principal vía de comunicación con el interior del país y quien provee de alimento y
+					agua
 					a
 					sus pobladores, símbolo de vida pues como sabemos si se acaba el agua, todo acabaría.
 				</p>
 				<p>
-					En la versión número 33 del festival nacional de la cumbia “José Barros Palomino” fui invitado a exponer este
+					En la versión número 33 del festival nacional de la cumbia “José Barros Palomino” fui invitado a exponer
+					este
 					proyecto
 					fotográfico que consta de 10 imágenes, expuesto a las riveras del viejo puerto, el cual por muchos años
 					recibió
-					habitantes de todas las regiones del país, estando ahí y en medio de la exposición hubo un componente con el
+					habitantes de todas las regiones del país, estando ahí y en medio de la exposición hubo un componente con
+					el
 					cual
 					no contaba y era que esto iba a servir de pedagogía para sus habitantes, especialmente los más pequeños,
 					quienes
-					interesados al ver la belleza de sus aguas en las imágenes presentadas, se intrigaron por conocer más acerca de
+					interesados al ver la belleza de sus aguas en las imágenes presentadas, se intrigaron por conocer más acerca
+					de
 					lo
-					que veían, con esto se logró sensibilizarlos que vieran la majestuosidad de sus aguas y que lo apreciaran de una
+					que veían, con esto se logró sensibilizarlos que vieran la majestuosidad de sus aguas y que lo apreciaran de
+					una
 					manera
-					diferente, una manera en la cual no se les había mostrado y que permitió que tuvieran conciencia de él, que el
+					diferente, una manera en la cual no se les había mostrado y que permitió que tuvieran conciencia de él, que
+					el
 					arrojar
-					basura y cualquier cosa que no perteneciera al rio les afectaba no solo a ellos sino a todos sus pobladores, allí
+					basura y cualquier cosa que no perteneciera al rio les afectaba no solo a ellos sino a todos sus pobladores,
+					allí
 					surge
 					el voz a voz entre ellos y las ganas de querer cuidar su rio, el rio de todos, el rio grande de la montaña,
 					nuestro
 					rio “Yuma”.
 				</p>
-				<p>En este caso la fotografía sirvió de vehículo para generar de nuevo los lazos perdidos entre las generaciones
+				<p>En este caso la fotografía sirvió de vehículo para generar de nuevo los lazos perdidos entre las
+					generaciones
 					más
 					jóvenes y las vigentes, conciencia por parte de ellos de sus aguas, su importancia y belleza y su deber como
 					habitantes
@@ -543,8 +579,7 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 					para las generaciones actuales y las venideras.</p>
 				<p>Colombia Cultural (Arqueología CESAR Y MAGDALENA) SISTEMA NACIONAL DE INFORMACIÓN CULTURAL
 					<a href="http://www.sinic.gov.co/SINIC/ColombiaCultural/ColCulturalBusca.aspx?AREID=3&SECID=8&IdD
-					ep=20&COLTEM=211"
-					 target="_blank">
+					ep=20&COLTEM=211" target="_blank">
 						<u>ENLACE</u>
 					</a>
 				</p>
@@ -648,8 +683,8 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 	<script src="js/menu2.js"></script>
 	<script src="https://use.fontawesome.com/d7256811e2.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/amplitudejs@3.2.3/dist/amplitude.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 	<script type="text/javascript">
 		Amplitude.init({
@@ -664,7 +699,7 @@ y el coraje con el que afrontamos nuestra realidad y nuestros sueños.
 				"album": "21N",
 				"url": "audio/08_dia_a_dia.mp3",
 				"cover_art_url": "img/thumb_dia_a_dia.jpg"
-			},{
+			}, {
 				"name": "Intro",
 				"artist": "Pueblo Caliente",
 				"album": "Pueblo Caliente",
