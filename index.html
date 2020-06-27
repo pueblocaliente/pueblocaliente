@@ -31,7 +31,8 @@
 		document.documentElement.className = "js";
 		var supportsCssVars = function () {
 			var e, t = document.createElement("style");
-			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS
+			return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window
+				.CSS
 				.supports &&
 				window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e
 		};
@@ -106,15 +107,19 @@
 							<div id="player-progress-bar-container">
 								<progress id="song-played-progress" class="amplitude-song-played-progress"
 									amplitude-main-song-played-progress="true"></progress>
-								<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+								<progress id="song-buffered-progress" class="amplitude-buffered-progress"
+									value="0"></progress>
 							</div>
 							<div id="player-middle">
 								<div id="time-container">
-									<span class="amplitude-current-time time-container" amplitude-main-current-time="true"></span>
-									<span class="amplitude-duration-time time-container" amplitude-main-duration-time="true"></span>
+									<span class="amplitude-current-time time-container"
+										amplitude-main-current-time="true"></span>
+									<span class="amplitude-duration-time time-container"
+										amplitude-main-duration-time="true"></span>
 								</div>
 								<div id="meta-container">
-									<span amplitude-song-info="name" amplitude-main-song-info="true" class="song-name"></span>
+									<span amplitude-song-info="name" amplitude-main-song-info="true"
+										class="song-name"></span>
 
 									<div class="song-artist-album">
 										<span amplitude-song-info="artist" amplitude-main-song-info="true"></span>
@@ -132,7 +137,8 @@
 									</div>
 
 									<div id="play-pause-container">
-										<div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause"></div>
+										<div class="amplitude-play-pause" amplitude-main-play-pause="true"
+											id="play-pause"></div>
 									</div>
 
 									<div id="next-container">
@@ -152,7 +158,8 @@
 
 						<div id="list-screen" class="slide-in-top">
 							<div id="list">
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="0">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="0">
 									<span class="song-number-now-playing">
 										<span class="number">1</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -168,7 +175,8 @@
 									</div>
 								</div>
 
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="1">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="1">
 									<span class="song-number-now-playing">
 										<span class="number">2</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -184,7 +192,8 @@
 									</div>
 								</div>
 
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="2">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="2">
 									<span class="song-number-now-playing">
 										<span class="number">3</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -200,7 +209,8 @@
 									</div>
 								</div>
 
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="3">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="3">
 									<span class="song-number-now-playing">
 										<span class="number">4</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -215,7 +225,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="4">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="4">
 									<span class="song-number-now-playing">
 										<span class="number">5</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -230,7 +241,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="5">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="5">
 									<span class="song-number-now-playing">
 										<span class="number">6</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -245,7 +257,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="6">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="6">
 									<span class="song-number-now-playing">
 										<span class="number">7</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -260,7 +273,8 @@
 										</div>
 									</div>
 								</div>
-								<div class="song amplitude-song-container amplitude-play-pause" amplitude-song-index="7">
+								<div class="song amplitude-song-container amplitude-play-pause"
+									amplitude-song-index="7">
 									<span class="song-number-now-playing">
 										<span class="number">8</span>
 										<img class="now-playing" src="img/now-playing.svg" />
@@ -284,7 +298,8 @@
 			<h2 class="content__title">estar</h2>
 			<div class="content__subtitle">al tanto de...</div>
 			<div class="sus-wrp">
-				<p style="padding: 15px;">Ingresa tu dirección de correo electrónico para recibir las últimas historias de este
+				<p style="padding: 15px;">Ingresa tu dirección de correo electrónico para recibir las últimas historias
+					de este
 					pueblo que esta caliente.</p>
 				<!-- <input class="sus_in" type="text" placeholder="Correo">
 				<button class="sus_sub" type="submit">Enviar</button> -->
@@ -295,13 +310,15 @@
 						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
 						target="_blank" novalidate>
 						<div id="mc_embed_signup_scroll">
-							<input type="email" value="" name="EMAIL" class="sus_in" id="mce-EMAIL" placeholder="Correo" required>
+							<input type="email" value="" name="EMAIL" class="sus_in" id="mce-EMAIL" placeholder="Correo"
+								required>
 							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							<div style="position: absolute; left: -5000px;" aria-hidden="true">
 								<input type="text" name="b_215bbcc52e2f1d21f84ee4607_2f4bff8411" tabindex="-1" value="">
 							</div>
 							<div class="clear">
-								<input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" class="sus_sub">
+								<input type="submit" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe"
+									class="sus_sub">
 							</div>
 						</div>
 					</form>
@@ -382,6 +399,9 @@
 			<div class="content__subtitle">videos</div>
 			<div class="pc__videos">
 				<div class="pc__video_wrp"><iframe id="player11" class="yt_players" width="560" height="315"
+					src="https://www.youtube.com/embed/4_IigHzymXg?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
+					frameborder="0" allowfullscreen></iframe></div>
+				<div class="pc__video_wrp"><iframe id="player11" class="yt_players" width="560" height="315"
 						src="https://www.youtube.com/embed/RxS9BZ6nU7o?rel=0&wmode=Opaque&enablejsapi=1;showinfo=0;controls=0"
 						frameborder="0" allowfullscreen></iframe></div>
 				<div class="pc__video_wrp"><iframe id="player10" class="yt_players" width="560" height="315"
@@ -431,16 +451,19 @@
 			</article>
 			<article class="text-pill">
 				<p>
-					En una sociedad donde el poder político ejerce tanto control en el desarrollo de su gente. Surge Pueblo
+					En una sociedad donde el poder político ejerce tanto control en el desarrollo de su gente. Surge
+					Pueblo
 					Caliente
 					con la idea
 					de retratar la realidad y dejar un punto de vista claro. Quiere conocerlo? Escúchelo!!
 				</p>
 				<p>
-					Entendemos que las culturas y los individuos somos distintos. Por lo tanto, cada uno debe descubrir su
+					Entendemos que las culturas y los individuos somos distintos. Por lo tanto, cada uno debe descubrir
+					su
 					evolución y
 					desarrollo
-					a su tiempo, y a su manera. No todos pensamos igual, sentimos igual, ni todos queremos lo mismo. Respeto, en
+					a su tiempo, y a su manera. No todos pensamos igual, sentimos igual, ni todos queremos lo mismo.
+					Respeto, en
 					pocas
 					palabras.
 				</p>
@@ -454,40 +477,51 @@
 			</article>
 			<article class="text-pill">
 				<p>
-					Mi otro yo, tuvo la delicadeza el día de hoy de preguntarme sobre el estado real de las cosas, sorpresa me
+					Mi otro yo, tuvo la delicadeza el día de hoy de preguntarme sobre el estado real de las cosas,
+					sorpresa me
 					lleve
 					al darme
-					cuenta que a pesar de una, “estabilidad”, social capitalista conocida, me combato entre pensamientos de mi
+					cuenta que a pesar de una, “estabilidad”, social capitalista conocida, me combato entre pensamientos
+					de mi
 					realidad
-					y me pregunto si todos tenemos dentro de si este otro yo, que locuaz e intempestivo, totaliza o resume el
+					y me pregunto si todos tenemos dentro de si este otro yo, que locuaz e intempestivo, totaliza o
+					resume el
 					accionar
 					del
-					diario vivir del sujeto a la pregunta básica de la finalidad u objetivo. He de esperar que sea así, que todos
+					diario vivir del sujeto a la pregunta básica de la finalidad u objetivo. He de esperar que sea así,
+					que todos
 					en
 					el
-					interior tengamos, ese chance de reflexión y sin obviarlo lo enfrentemos, como nos adoctrinan a enfrentar la
+					interior tengamos, ese chance de reflexión y sin obviarlo lo enfrentemos, como nos adoctrinan a
+					enfrentar la
 					muerte.
 				</p>
 				<p>
-					Cierto es que morir es mucho más fácil que vivir, y que existen millones de razones para la muerte pero solo
+					Cierto es que morir es mucho más fácil que vivir, y que existen millones de razones para la muerte
+					pero solo
 					una
 					para la
-					vida, es esta la pregunta que totaliza o simplifica mi otro yo ¿Cuál es la razón de esta vida?. Criticar la
+					vida, es esta la pregunta que totaliza o simplifica mi otro yo ¿Cuál es la razón de esta vida?.
+					Criticar la
 					vida
 					de
-					los demás, comprarla, aparentarla, o tal vez sea aprenderla, compartirla, amarla … vivirla. Y me pregunto si
+					los demás, comprarla, aparentarla, o tal vez sea aprenderla, compartirla, amarla … vivirla. Y me
+					pregunto si
 					este
 					desborde
-					tecnológico y avance a paso gigante de la maquinaria industrial delimita nuestra “libertad” de vivirla a solo
+					tecnológico y avance a paso gigante de la maquinaria industrial delimita nuestra “libertad” de
+					vivirla a solo
 					los
 					paradigmas
 					planteados por un papel moneda vacío y sin corazón.
 				</p>
 				<p>
-					Este otro yo que con razón pura grita libertad, pero no puede ser más libre en este mundo terrenal de lo que
+					Este otro yo que con razón pura grita libertad, pero no puede ser más libre en este mundo terrenal
+					de lo que
 					nos
 					permite
-					el capital. ¿Llegaremos a obtenerla, una libertad sublime fuera del tecnicismo industrial, y como lo podremos
+					el capital. ¿Llegaremos a obtenerla, una libertad sublime fuera del tecnicismo industrial, y como lo
+					podremos
 					lograr
 					desde la unidad del sujeto?
 				</p>
@@ -503,96 +537,125 @@
 				</h4>
 				<h4>LAS MIRADAS QUE VUELVEN AL RIO</h4>
 				<p>
-					“En Colombia existen un sinnúmero de manifestaciones culturales que expresan la variedad étnica, religiosa,
+					“En Colombia existen un sinnúmero de manifestaciones culturales que expresan la variedad étnica,
+					religiosa,
 					de
 					costumbres,
 					tradiciones y formas de vida de su población, así como su riqueza natural y diversidad de climas,
 					geografías y
 					paisajes,
-					entre otros. Toda la franja del río Magdalena perteneciente hoy a los departamentos del Cesar y Magdalena, y
+					entre otros. Toda la franja del río Magdalena perteneciente hoy a los departamentos del Cesar y
+					Magdalena, y
 					desde
-					Tamalameque hasta Salamina fue “tierra de Chimilas”. Desde esta franja hasta el descenso al valle de los ríos
+					Tamalameque hasta Salamina fue “tierra de Chimilas”. Desde esta franja hasta el descenso al valle de
+					los ríos
 					Cesar
-					y Ranchería se extendían igualmente. La nación chimila no era un pueblo disperso ni trashumante; su
+					y Ranchería se extendían igualmente. La nación chimila no era un pueblo disperso ni trashumante;
+					su
 					territorio
 					estaba
-					dividido en comarcas (la de Pocabuy y la de Upar, con ciudades y caciques; las principales, algunos con sus
+					dividido en comarcas (la de Pocabuy y la de Upar, con ciudades y caciques; las principales, algunos
+					con sus
 					nombres
-					originales y otras con nombres dados posteriormente por los españoles). El indio chimila era gran navegante
+					originales y otras con nombres dados posteriormente por los españoles). El indio chimila era gran
+					navegante
 					de
 					ríos
-					y ciénagas; construía sus pueblos como un conjunto de grandes bohíos circulares en medio de los cuales
+					y ciénagas; construía sus pueblos como un conjunto de grandes bohíos circulares en medio de los
+					cuales
 					había
 					siempre
-					uno mayor. Los bohíos eran de palma y vara con techo cónico y coronados en el vértice con una olla de
+					uno mayor. Los bohíos eran de palma y vara con techo cónico y coronados en el vértice con una
+					olla de
 					cerámica.
-					.La mitad de los chimilas vivían a orillas de la ciénaga y la otra mitad a orillas de los ríos; los de las
+					.La mitad de los chimilas vivían a orillas de la ciénaga y la otra mitad a orillas de los ríos;
+					los de las
 					ciénagas
-					tendrían métodos diferentes de pesca y otro régimen de cultivo y vivienda, acostumbraban trasladar sus
+					tendrían métodos diferentes de pesca y otro régimen de cultivo y vivienda, acostumbraban
+					trasladar sus
 					casas
 					pajizas
 					conforme al niveles de las agua de la respectiva ciénaga a orillas de cual se encontrara”. (1)
 				</p>
 				<p>
-					Yo nací en la población rivereña de “El Banco” Magdalena ciudad imperio de la cumbia, es allí donde nace
+					Yo nací en la población rivereña de “El Banco” Magdalena ciudad imperio de la cumbia, es allí
+					donde nace
 					el
 					proyecto
-					“País Pocabuy” en uno de mis tantos viajes a recorrer mis raíces, noté que en el pueblo como en la mayoría
+					“País Pocabuy” en uno de mis tantos viajes a recorrer mis raíces, noté que en el pueblo como en
+					la mayoría
 					de
 					las
-					poblaciones rivereñas que acompañan al gran rio “Yuma” o rio Magdalena como se le conoce comúnmente se le
+					poblaciones rivereñas que acompañan al gran rio “Yuma” o rio Magdalena como se le conoce
+					comúnmente se le
 					ha
 					dado
-					la espalda y ya no se le mira, es en este punto el cual decido hacerle un homenaje a “Yuma” a sus más
+					la espalda y ya no se le mira, es en este punto el cual decido hacerle un homenaje a “Yuma” a sus
+					más
 					antiguos
 					habitantes,
-					sus pescadores y tratar de dar una visión diferente a sus pobladores y que sus miradas vuelvan a ese
+					sus pescadores y tratar de dar una visión diferente a sus pobladores y que sus miradas vuelvan a
+					ese
 					majestuoso
 					rio,
-					madre de todos el cual por descuido se ha vuelto la cloaca de sus habitantes, tratando de generar un cambio y
+					madre de todos el cual por descuido se ha vuelto la cloaca de sus habitantes, tratando de generar un
+					cambio y
 					una
 					visión
-					diferente, que sus pobladores vuelvan a tener el romance que tenían nuestros ancestros y que eso resulte en
+					diferente, que sus pobladores vuelvan a tener el romance que tenían nuestros ancestros y que eso
+					resulte en
 					el
 					resurgimiento
-					del rio el cual era la principal vía de comunicación con el interior del país y quien provee de alimento y
+					del rio el cual era la principal vía de comunicación con el interior del país y quien provee de
+					alimento y
 					agua
 					a
 					sus pobladores, símbolo de vida pues como sabemos si se acaba el agua, todo acabaría.
 				</p>
 				<p>
-					En la versión número 33 del festival nacional de la cumbia “José Barros Palomino” fui invitado a exponer
+					En la versión número 33 del festival nacional de la cumbia “José Barros Palomino” fui invitado a
+					exponer
 					este
 					proyecto
-					fotográfico que consta de 10 imágenes, expuesto a las riveras del viejo puerto, el cual por muchos años
+					fotográfico que consta de 10 imágenes, expuesto a las riveras del viejo puerto, el cual por muchos
+					años
 					recibió
-					habitantes de todas las regiones del país, estando ahí y en medio de la exposición hubo un componente con
+					habitantes de todas las regiones del país, estando ahí y en medio de la exposición hubo un
+					componente con
 					el
 					cual
-					no contaba y era que esto iba a servir de pedagogía para sus habitantes, especialmente los más pequeños,
+					no contaba y era que esto iba a servir de pedagogía para sus habitantes, especialmente los más
+					pequeños,
 					quienes
-					interesados al ver la belleza de sus aguas en las imágenes presentadas, se intrigaron por conocer más acerca
+					interesados al ver la belleza de sus aguas en las imágenes presentadas, se intrigaron por conocer
+					más acerca
 					de
 					lo
-					que veían, con esto se logró sensibilizarlos que vieran la majestuosidad de sus aguas y que lo apreciaran de
+					que veían, con esto se logró sensibilizarlos que vieran la majestuosidad de sus aguas y que lo
+					apreciaran de
 					una
 					manera
-					diferente, una manera en la cual no se les había mostrado y que permitió que tuvieran conciencia de él, que
+					diferente, una manera en la cual no se les había mostrado y que permitió que tuvieran conciencia
+					de él, que
 					el
 					arrojar
-					basura y cualquier cosa que no perteneciera al rio les afectaba no solo a ellos sino a todos sus pobladores,
+					basura y cualquier cosa que no perteneciera al rio les afectaba no solo a ellos sino a todos sus
+					pobladores,
 					allí
 					surge
-					el voz a voz entre ellos y las ganas de querer cuidar su rio, el rio de todos, el rio grande de la montaña,
+					el voz a voz entre ellos y las ganas de querer cuidar su rio, el rio de todos, el rio grande de la
+					montaña,
 					nuestro
 					rio “Yuma”.
 				</p>
 				<p>En este caso la fotografía sirvió de vehículo para generar de nuevo los lazos perdidos entre las
 					generaciones
 					más
-					jóvenes y las vigentes, conciencia por parte de ellos de sus aguas, su importancia y belleza y su deber como
+					jóvenes y las vigentes, conciencia por parte de ellos de sus aguas, su importancia y belleza y su
+					deber como
 					habitantes
-					de cuidarlo y protegerlo, pues como elemento es el de mayor importancia en la construcción de un futuro
+					de cuidarlo y protegerlo, pues como elemento es el de mayor importancia en la construcción de un
+					futuro
 					sostenible
 					para las generaciones actuales y las venideras.</p>
 				<p>Colombia Cultural (Arqueología CESAR Y MAGDALENA) SISTEMA NACIONAL DE INFORMACIÓN CULTURAL
